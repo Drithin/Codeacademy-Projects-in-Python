@@ -1,10 +1,7 @@
 def is_int(x):
-  if abs(x) != x:
-     if type(x) == int or type(x) == float:
-      return True
-      print "It is True"
-     else:
-      return False
-      print "It is False"
+  
+  if type(x) == int or (type(x) == float and x%1.0==0):
+    return True
+  else:
+    return False
  
-is_int(-3.4)
